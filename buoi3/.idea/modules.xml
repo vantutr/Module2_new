@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/baitap1/baitap1.iml" filepath="$PROJECT_DIR$/baitap1/baitap1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap2/baitap2.iml" filepath="$PROJECT_DIR$/baitap2/baitap2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap3/baitap3.iml" filepath="$PROJECT_DIR$/baitap3/baitap3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap4/baitap4.iml" filepath="$PROJECT_DIR$/baitap4/baitap4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap5/baitap5.iml" filepath="$PROJECT_DIR$/baitap5/baitap5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap6/baitap6.iml" filepath="$PROJECT_DIR$/baitap6/baitap6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap7/baitap7.iml" filepath="$PROJECT_DIR$/baitap7/baitap7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap8/baitap8.iml" filepath="$PROJECT_DIR$/baitap8/baitap8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap9/baitap9.iml" filepath="$PROJECT_DIR$/baitap9/baitap9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/buoi3.iml" filepath="$PROJECT_DIR$/.idea/buoi3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh1/thuchanh1.iml" filepath="$PROJECT_DIR$/thuchanh1/thuchanh1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh2/thuchanh2.iml" filepath="$PROJECT_DIR$/thuchanh2/thuchanh2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh3/thuchanh3.iml" filepath="$PROJECT_DIR$/thuchanh3/thuchanh3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh4/thuchanh4.iml" filepath="$PROJECT_DIR$/thuchanh4/thuchanh4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh5/thuchanh5.iml" filepath="$PROJECT_DIR$/thuchanh5/thuchanh5.iml" />
+    </modules>
+  </component>
+</project>
