@@ -1,24 +1,18 @@
 public class Fan {
-    int SLOW, MEDIUM, FAST;
+    //static final static: là hằng số tốc độ
+    public static final int SLOW = 1;
+    public static final int MEDIUM = 2;
+    public static final int FAST = 3;
+
     private int speed;
     private boolean on;
     private double radius;
     private String color;
     public Fan() {
-        SLOW = 1; MEDIUM = 2; FAST = 3;
         speed = SLOW;
         on = false;
         radius = 5.0;
         color = "blue";
-    }
-    public int getSLOW() {
-        return SLOW;
-    }
-    public int getMEDIUM() {
-        return MEDIUM;
-    }
-    public int getFAST() {
-        return FAST;
     }
     public int getSpeed() {
         return speed;
@@ -32,15 +26,6 @@ public class Fan {
     public String getColor() {
         return color;
     }
-    public void setSLOW(int SLOW) {
-        this.SLOW = SLOW;
-    }
-    public void setMEDIUM(int MEDIUM) {
-        this.MEDIUM = MEDIUM;
-    }
-    public void setFAST(int FAST) {
-        this.FAST = FAST;
-    }
     public void setSpeed(int speed) {
         this.speed = speed;
     }
@@ -53,14 +38,14 @@ public class Fan {
     public void setColor(String color) {
         this.color = color;
     }
-    public void getOn() {
-        on = true;
+
+    @Override
+    public String toString() {
+        if (this.on) {
+            return "Fan{speed=" + speed + ", radius=" + radius + ", color='" + color + "', fan is on}";
+        } else {
+            return "Fan{speed=" + speed + ", radius=" + radius + ", color='" + color + "', fan is off}";
+        }
     }
-    public void getOff() {
-        on = false;
-    }
-//    public String toString() {
-//
-//    }
 
 }

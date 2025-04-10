@@ -22,6 +22,7 @@ public class Main {
         }
         return sum / arr.length;
     }
+
     public static int countGrage(Student[] arr) {
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -31,8 +32,8 @@ public class Main {
         }
         return count;
     }
-    public static void displayStudent(Student[] arr) {
 
+    public static void displayStudent(Student[] arr) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i].getName().equals("Nguyễn Văn A")) {
                 System.out.println(arr[i].getEmail());
