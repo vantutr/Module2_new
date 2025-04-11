@@ -14,19 +14,7 @@ public class Main {
         System.out.print("Nhập tên cần tìm: ");
         String name = sc.nextLine();
 
-        boolean checkNam = false;
-        for (Product p : product) {
-            if (p.getName().equalsIgnoreCase(name)) {
-                System.out.println("Tìm thấy sản phẩm: ");
-                System.out.println(p);
-                checkNam = true;
-                break;
-            }
-        }
-        if (!checkNam) {
-            System.out.println("Không tìm thấy sản phẩm nào có tên: " + name);
-        }
-
+        checkName(product, name);
         priceList(product);
 
         int max = maxQuantity(product);
@@ -40,6 +28,21 @@ public class Main {
         System.out.println("Tổng số sản phẩm là: " + Product.getTotalProduct());
         System.out.println("Tổng giá trị tồn kho là: " + Product.getTotalInventoryValue());
         System.out.println("Giá trị trung bình: " + Product.getAveragePrice());
+    }
+
+    private static void checkName(Product[] product, String name) {
+        boolean checkName = false;
+        for (Product p : product) {
+            if (p.getName().equalsIgnoreCase(name)) {
+                System.out.println("Tìm thấy sản phẩm: ");
+                System.out.println(p);
+                checkName = true;
+                break;
+            }
+        }
+        if (!checkName) {
+            System.out.println("Không tìm thấy sản phẩm nào có tên: " + name);
+        }
     }
 
     public static void priceList(Product[] product) {
