@@ -61,6 +61,9 @@ public class Product {
     }
 
     public static double getAveragePrice() {
+        if (totalProduct == 0) {
+            return 0;
+        }
         return totalInventoryValue / totalProduct;
     }
 
@@ -74,6 +77,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("Tên id: %d Tên sản phẩm: %s  Giá: %f  SL: %d  Kho: %s", id, name, price, quantity, storeName);
+        return String.format("id: %d Tên sản phẩm: %s  Giá: %f  SL: %d  Kho: %s \n", id, name, price, quantity, storeName);
     }
 }
