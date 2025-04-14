@@ -3,7 +3,6 @@ public class Point {
     protected float y = 0.0f;
 
     public Point() {
-
     }
 
     public Point(float x, float y) {
@@ -15,7 +14,7 @@ public class Point {
         return x;
     }
 
-    public void setX() {
+    public void setX(float x) {
         this.x = x;
     }
 
@@ -26,18 +25,17 @@ public class Point {
     public void setY(float y) {
         this.y = y;
     }
+
     public void setXY(float x, float y) {
         this.x = x;
         this.y = y;
     }
-    public Float[] getXY() {
-        return new Float[]{getX(), getY()};
+    public float[] getXY() {
+        return new float[]{x, y};
     }
 
     @Override
     public String toString() {
-        return "(" + getX() +
-                ", " + getY() +
-                ")";
+        return "(" + x + "," + y + ")";
     }
 }
