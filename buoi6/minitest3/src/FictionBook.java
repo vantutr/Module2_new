@@ -1,22 +1,23 @@
 public class FictionBook extends Book {
-    private String Category = "Viễn Tưởng";
+    private String category = "Viễn Tưởng";
 
     public FictionBook() {
     }
 
     public FictionBook(String bookCode, String name, int price, String author, String Category) {
         super(bookCode, name, price, author);
-        this.Category = Category;
+        this.category = Category;
     }
 
     public String getCategory() {
-        return Category;
+        return category;
     }
 
     public void setCategory(String category) {
-        Category = category;
+        category = category;
     }
 
+    @Override
     public int getPrice() {
         return super.getPrice() * 93 / 100;
     }
@@ -24,7 +25,7 @@ public class FictionBook extends Book {
     @Override
     public String toString() {
         return super.toString() +
-                " Category='" + Category + '\'' +
+                " Category='" + category + '\'' +
                 '}';
     }
 }

@@ -26,7 +26,7 @@ public class ProgrammingBook extends Book {
         this.framework = framework;
     }
 
-
+    @Override
     public int getPrice() {
         return super.getPrice() * 95 / 100;
     }

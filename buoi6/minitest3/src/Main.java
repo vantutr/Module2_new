@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Book[] book = new Book[6];
@@ -56,7 +54,7 @@ public class Main {
         for (Book book : books) {
             if (book instanceof ProgrammingBook) {
                 ProgrammingBook pBook = (ProgrammingBook) book;
-                if (pBook.getLanguage().equals("Java")) {
+                if (pBook.getLanguage().equalsIgnoreCase("Java")) {
                     count++;
                 }
             }
@@ -69,7 +67,7 @@ public class Main {
         for (Book book : books) {
             if (book instanceof FictionBook) {
                 FictionBook fBook = (FictionBook) book;
-                if (fBook.getCategory().equals("Viễn tưởng 1")) {
+                if (fBook.getCategory().equalsIgnoreCase("Viễn tưởng 1")) {
                     count++;
                 }
             }
