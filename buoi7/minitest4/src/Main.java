@@ -4,12 +4,12 @@ public class Main {
     public static void main(String[] args) {
         Employee[] employees = new Employee[6];
 
-        employees[0] = new Parttime(104, "Nguyễn Văn D", 21, "0123456789", "d@123", 60);
-        employees[1] = new Parttime(105, "Nguyễn Văn E", 40, "0123456789", "e@123", 25);
-        employees[2] = new Parttime(106, "Nguyễn Thị A", 45, "0123456789", "ed@123", 50);
-        employees[3] = new Fulltime(101, "Nguyễn Văn A", 20, "0123456789", "a@123", 1000000, 150000, 6000000);
-        employees[4] = new Fulltime(102, "Nguyễn Văn B", 26, "0123456789", "b@123", 500000, 50000, 5000000);
-        employees[5] = new Fulltime(103, "Nguyễn Văn C", 30, "0123456789", "c@123", 2000000, 0, 10000000);
+        employees[0] = new Fulltime(101, "Nguyễn Văn A", 20, "0123456789", "a@123", 1000000, 150000, 6000000);
+        employees[1] = new Fulltime(102, "Nguyễn Văn B", 26, "0123456789", "b@123", 500000, 50000, 5000000);
+        employees[2] = new Fulltime(103, "Nguyễn Văn C", 30, "0123456789", "c@123", 2000000, 0, 10000000);
+        employees[3] = new Parttime(104, "Nguyễn Văn D", 21, "0123456789", "d@123", 60);
+        employees[4] = new Parttime(105, "Nguyễn Văn E", 40, "0123456789", "e@123", 25);
+        employees[5] = new Parttime(106, "Nguyễn Thị A", 45, "0123456789", "ed@123", 50);
 
         Scanner sc = new Scanner(System.in);
         int choice = -1;
