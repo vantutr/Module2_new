@@ -38,22 +38,37 @@ public class Main {
                         System.out.println("2. Thêm Meat");
                         System.out.print("Nhập lựa chọn của bạn: ");
                         choice1 = sc.nextInt();
+                        sc.nextLine(); // Để tránh lỗi khi đọc dòng nhập tiếp theo
+
+                        System.out.print("Nhập ID sản phẩm: ");
+                        String id = sc.nextLine();
+
+                        if (manager.checkIdExistence(id)) {
+                            System.out.println("ID đã tồn tại. Không thể thêm sản phẩm!");
+                            break;
+                        }
+
                         switch (choice1) {
                             case 1:
-                                manager.addMaterial(inputCrispyFlour(sc));
+                                CrispyFlour crispyFlour = inputCrispy(sc, id);
+                                manager.addMaterial(crispyFlour);
                                 System.out.println("Đã thêm CrispyFlour!");
                                 manager.displayAll();
                                 break;
+
                             case 2:
-                                manager.addMaterial(inputMeat(sc));
+                                Meat meat = inputMeat(sc, id);
+                                manager.addMaterial(meat);
                                 System.out.println("Đã thêm Meat!");
                                 manager.displayAll();
                                 break;
+
                             default:
                                 System.out.println("Lựa chọn không hợp lệ");
                         }
                     }
                     break;
+
                 case 2:
                     int choice2 = -1;
                     while (choice2 != 1 && choice2 != 2) {
@@ -70,7 +85,7 @@ public class Main {
                                 if (!manager.checkIdExistence(idCrispyFlour)) {
                                     System.out.println("Không tìm thấy CrispyFlour với ID: " + idCrispyFlour);
                                 } else {
-                                    manager.updateMaterial(idCrispyFlour, inputCrispyFlour(sc));
+                                    manager.updateMaterial(idCrispyFlour, inputCrispy(sc, idCrispyFlour));
                                     System.out.println("Đã sửa CrispyFlour!");
                                     manager.displayAll();
                                 }
@@ -82,7 +97,7 @@ public class Main {
                                 if (!manager.checkIdExistence(idMeat)) {
                                     System.out.println("Không tìm thấy Meat với ID: " + idMeat);
                                 } else {
-                                    manager.updateMaterial(idMeat, inputMeat(sc));
+                                    manager.updateMaterial(idMeat, inputMeat(sc, idMeat));
                                     System.out.println("Đã sửa Meat!");
                                     manager.displayAll();
                                 }
@@ -97,7 +112,15 @@ public class Main {
                     sc.nextLine();
                     System.out.print("Nhập ID để xóa sản phẩm: ");
                     String id = sc.nextLine();
-                    manager.deleteMaterial(id);
+
+                    System.out.println("Ban co that su muon xoa khong? (y/n)");
+                    String delete = sc.next();
+                    if (delete.equalsIgnoreCase("y")) {
+                        manager.deleteMaterial(id);
+                    } else {
+                        System.out.println("Đã hủy yêu cầu xóa!");
+                        break;
+                    }
                     manager.displayAll();
                     break;
                 case 4:
@@ -108,15 +131,9 @@ public class Main {
 
             }
         }
-
-
     }
 
-    private static CrispyFlour inputCrispyFlour(Scanner sc) {
-        sc.nextLine();
-        System.out.print("Id: ");
-        String id = sc.nextLine();
-
+    private static CrispyFlour inputCrispy(Scanner sc, String id) {
         System.out.print("Tên: ");
         String name = sc.nextLine();
 
@@ -132,11 +149,7 @@ public class Main {
         return new CrispyFlour(id, name, LocalDate.now().minusMonths(month), cost, quantity);
     }
 
-    private static Meat inputMeat(Scanner sc) {
-        sc.nextLine();
-        System.out.print("Id: ");
-        String id = sc.nextLine();
-
+    private static Meat inputMeat(Scanner sc, String id) {
         System.out.print("Tên: ");
         String name = sc.nextLine();
 
@@ -151,6 +164,4 @@ public class Main {
 
         return new Meat(id, name, LocalDate.now().minusDays(day), cost, quantity);
     }
-
-
 }
