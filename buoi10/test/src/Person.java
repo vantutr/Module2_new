@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+class Person {
+    String name;
+    Person rightHand; // Người này nắm tay phải của người kia
 
-public class Person {
+    Person(String name) {
+        this.name = name;
+        this.rightHand = null;
+    }
 }
