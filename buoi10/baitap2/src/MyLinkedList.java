@@ -170,7 +170,7 @@ public class MyLinkedList<E> {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + numNodes);
         }
         Node current = head;
-        for (int i = 0; i < numNodes; i++) {
+        for (int i = 0; i < index; i++) {
             current = current.next;
         }
         return (E) current.data;

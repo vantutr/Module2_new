@@ -10,7 +10,7 @@ public class Main {
         circle = new Circle("indigo", false, 3.5);
         System.out.println(circle);
 
-        System.out.println("====================================Menu===============================");
+        System.out.println("===================================================================");
         Rectangle rectangle = new Rectangle();
         System.out.println(rectangle);
 
@@ -20,7 +20,7 @@ public class Main {
         rectangle = new Rectangle("orange", true, .5, 3.8);
         System.out.println(rectangle);
 
-        System.out.println("====================================Menu===============================");
+        System.out.println("===================================================================");
 
         Square square = new Square();
         System.out.println(square);
@@ -30,7 +30,6 @@ public class Main {
 
         square = new Square("yellow", true, 5.8);
         System.out.println(square);
-
     }
 
 }
