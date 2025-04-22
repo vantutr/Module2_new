@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+class Student {
+    public int id;
+    public String name;
 
-public class Student {
+    public Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public String toString() {
+        return "ID: " + id + ", Name: " + name;
+    }
 }
