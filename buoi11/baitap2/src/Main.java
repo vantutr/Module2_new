@@ -1,15 +1,14 @@
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class Main {
     public static void main(String[] args) {
-        String input = "Mưa rơi ngoài hiên , mưa rơi trên mái, mưa lặng lẽ trôi qua những tán lá xanh . " +
-                "Trong lòng tôi cũng có mưa , mưa của những ngày xưa cũ , mưa của những kỷ niệm không tên";
+        String input = "Mưa rơi ngoài hiên, mưa rơi trên mái, mưa lặng lẽ trôi qua những tán lá xanh. " +
+                "Trong lòng tôi cũng có mưa, mưa của những ngày xưa cũ, mưa của những kỷ niệm không tên";
 
         input = input.toLowerCase();
 
-        String[] words = input.split(" ");
+        String[] words = input.split("[\\s.,;:!?()\"'-]+");
 
         Map<String, Integer> wordMap = new TreeMap<>();
 

@@ -5,12 +5,18 @@
       <module fileurl="file://$PROJECT_DIR$/baitap1/baitap1.iml" filepath="$PROJECT_DIR$/baitap1/baitap1.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitap2/baitap2.iml" filepath="$PROJECT_DIR$/baitap2/baitap2.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitap3/baitap3.iml" filepath="$PROJECT_DIR$/baitap3/baitap3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap4/baitap4.iml" filepath="$PROJECT_DIR$/baitap4/baitap4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap5/baitap5.iml" filepath="$PROJECT_DIR$/baitap5/baitap5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap6/baitap6.iml" filepath="$PROJECT_DIR$/baitap6/baitap6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitap7/baitap7.iml" filepath="$PROJECT_DIR$/baitap7/baitap7.iml" />
       <module fileurl="file://$PROJECT_DIR$/buoi11.iml" filepath="$PROJECT_DIR$/buoi11.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/test2/test2.iml" filepath="$PROJECT_DIR$/test2/test2.iml" />
       <module fileurl="file://$PROJECT_DIR$/test3/test3.iml" filepath="$PROJECT_DIR$/test3/test3.iml" />
       <module fileurl="file://$PROJECT_DIR$/thuchanh1/thuchanh1.iml" filepath="$PROJECT_DIR$/thuchanh1/thuchanh1.iml" />
       <module fileurl="file://$PROJECT_DIR$/thuchanh2/thuchanh2.iml" filepath="$PROJECT_DIR$/thuchanh2/thuchanh2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh3/thuchanh3.iml" filepath="$PROJECT_DIR$/thuchanh3/thuchanh3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh4/thuchanh4.iml" filepath="$PROJECT_DIR$/thuchanh4/thuchanh4.iml" />
     </modules>
   </component>
 </project>
