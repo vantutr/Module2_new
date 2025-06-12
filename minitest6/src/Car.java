@@ -21,7 +21,7 @@ public class Car extends Vehicle {
 
     @Override
     public void displayInfo() {
-        System.out.println(super.toString() + "\t|" + "\tSeats: " + numberOfSeats + "\t|" + "\tTax: " + calculateTax());
+            System.out.println(super.toString() + "\t|" + "\tSeats: " + numberOfSeats + "\t|" + "\tTax: " + calculateTax());
     }
 
     @Override

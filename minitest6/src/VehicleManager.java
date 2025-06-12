@@ -55,22 +55,24 @@ public class VehicleManager {
     }
 
     public void sortByBrand() {
-        vehicles.sort(new Comparator<Vehicle>() {
-            @Override
-            public int compare(Vehicle v1, Vehicle v2) {
-                return v1.getBrand().compareToIgnoreCase(v2.getBrand());
-            }
-        });
+//        vehicles.sort(new Comparator<Vehicle>() {
+//            @Override
+//            public int compare(Vehicle v1, Vehicle v2) {
+//                return v1.getBrand().compareToIgnoreCase(v2.getBrand());
+//            }
+//        });
+        vehicles.sort(new BrandComparator());
         history.add("- Sắp xếp theo hãng xe");
     }
 
     public void sortByTax() {
-        vehicles.sort(new Comparator<Vehicle>() {
-            @Override
-            public int compare(Vehicle v1, Vehicle v2) {
-                return Double.compare(v1.calculateTax(), v2.calculateTax());
-            }
-        });
+//        vehicles.sort(new Comparator<Vehicle>() {
+//            @Override
+//            public int compare(Vehicle v1, Vehicle v2) {
+//                return Double.compare(v1.calculateTax(), v2.calculateTax());
+//            }
+//        });
+        vehicles.sort(new TaxComparator());
         history.add("- Sắp xếp theo thuế");
     }
 
